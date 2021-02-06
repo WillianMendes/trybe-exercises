@@ -8,10 +8,10 @@
 
 ```js
   const Aluno = {
-    Nome: 'Willian Mendes', 
+    nome: 'Willian Mendes', 
     signo: 'Virgem',
-    ano de nascimento: '1995',
-    conclusão de curso: '02/2022'
+    ano_de_nascimento: '1995',
+    conclusao_de_curso: '02/2022'
   }
 ``` 
 
