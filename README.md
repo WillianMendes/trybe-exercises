@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/WillianMendes/trybe-exercises/master/img/trybe.png">
 </p>
 
-# :metal: Sejam bem-vindos :metal:
+<h1 align="center"> :metal: Sejam bem-vindos :metal: </h1>
 
 ## Exercícios do curso Trybe <img src="https://media.giphy.com/media/e6w3i2arfjIoI8hWy0/giphy.gif" alt="foguete não tem ré" width="26" align="center">
 
