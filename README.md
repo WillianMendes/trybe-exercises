@@ -2,16 +2,16 @@
   <img src="https://raw.githubusercontent.com/WillianMendes/trybe-exercises/master/img/trybe.png">
 </p>
 
-# :metal: Sejam bem-vindos :metal:
+<h1 align="center"> :metal: Sejam bem-vindos :metal: </h1>
 
 ## Exercícios do curso Trybe <img src="https://media.giphy.com/media/e6w3i2arfjIoI8hWy0/giphy.gif" alt="foguete não tem ré" width="26" align="center">
 
 ```js
   const Aluno = {
-    Nome: 'Willian Mendes', 
+    nome: 'Willian Mendes', 
     signo: 'Virgem',
-    ano de nascimento: '1995',
-    conclusão de curso: '02/2022'
+    ano_de_nascimento: '1995',
+    conclusao_de_curso: '02/2022'
   }
 ``` 
 
@@ -43,13 +43,13 @@
 
 ## :pushpin: Módulo II - Em Breve
 
-<img src="https://i.gifer.com/XOsX.gif">
+<img src="https://lh3.googleusercontent.com/pw/ACtC-3cTTZKoYCPrp7K0LBHesvUd7a0euddhEL_Snhxs-Td3yW-PvjhpaEpG4hZLCFVwIW86pDzZw1Js-ebdt7n9ncfkeRU37UVIUGHSHMM4jj7HHHF48jk8GDhLFznnvlG-s9PplCQjvCH3oVgbDQM-oqeqTA=w383-h480-no?authuser=0">
 
 <br/>
 
 ## :pushpin: Módulo III - Em Breve
 
-<img src="https://i.gifer.com/XOsX.gif">
+<img src="https://lh3.googleusercontent.com/pw/ACtC-3cTTZKoYCPrp7K0LBHesvUd7a0euddhEL_Snhxs-Td3yW-PvjhpaEpG4hZLCFVwIW86pDzZw1Js-ebdt7n9ncfkeRU37UVIUGHSHMM4jj7HHHF48jk8GDhLFznnvlG-s9PplCQjvCH3oVgbDQM-oqeqTA=w383-h480-no?authuser=0">
 
 <br/>
 
