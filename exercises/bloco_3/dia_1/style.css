@@ -30,8 +30,34 @@ h2 {
     color: hsl(0deg, 0%, 25%);
 }
 
+h3 {
+    color: hsl(0deg, 0%, 25%);
+}
+
+a {
+    font-weight: 600px;
+    text-decoration: none;
+    color: hsl(0deg, 0%, 25%);
+}
+
+a:visited {
+    font-weight: 600px;
+    color: rgb(47, 193, 140);
+}
+
+p {
+    text-align: justify;
+    text-justify: auto;
+    color: hsl(0deg, 0%, 15%);
+}
+
+p:not(:last-child) {
+    margin-bottom: 64px;
+}
+
 ul {
     padding-inline-start: 20px;
+    margin-bottom: 64px;
 }
 
 ul li {
@@ -42,10 +68,12 @@ ul li:not(:last-child) {
     margin-bottom: 8px;
 }
 
+.googlelink {
+    color: rgb(47, 193, 140);
+}
+
 footer {
-    width: calc(100% - 32px);
-    position: fixed;
-    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
 }
