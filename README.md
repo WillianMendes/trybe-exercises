@@ -7,7 +7,7 @@
 ## Exercícios do curso Trybe <img src="https://media.giphy.com/media/e6w3i2arfjIoI8hWy0/giphy.gif" alt="foguete não tem ré" width="26" align="center">
 
 ```js
-  const Aluno = {
+  const aluno = {
     nome: 'Willian Mendes', 
     signo: 'Virgem',
     ano_de_nascimento: '1995',
@@ -23,7 +23,7 @@
 
 - **Git, Github e Internet** :heavy_check_mark:
 
-- **Introdução à HTML e CSS** :hourglass:
+- **Introdução à HTML e CSS** :heavy_check_mark:
 
 - **Introdução à JavaScript e Lógica de Programação** :hourglass:
 
