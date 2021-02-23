@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width"/>
     <title>Conheça o Stomatopoda</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav>
@@ -13,77 +14,97 @@
         <li><a href="#">Contato</a></li>
     </ul>
 </nav>
-<header>
-    <h1>Soco a 80Km/h: Conheça o Stomatopoda</h1>
-</header>
-<main>
-    <article>
-        <h2>Fatos sobre o Stomatopoda</h2>
-        <section class="general-information">
-            <h3>Informações Gerais</h3>
-            <table>
-                <caption><i>Odontodactylus Scyllarus</i></caption>
-                <thead>
-                <tr>
-                    <th>Reino</th>
-                    <th>Filo</th>
-                    <th>Subfilo</th>
-                    <th>Classe</th>
-                    <th>Subclasse</th>
-                    <th>Ordem</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Animal</td>
-                    <td>Antrópodes</td>
-                    <td>Crustáceo</td>
-                    <td>Malacostraca</td>
-                    <td>Hoplocarida</td>
-                    <td>Stomatopoda</td>
-                </tr>
-                </tbody>
-            </table>
-        </section>
-        <section class="vision">
-            <h3>Olhos de Águia (ou de Stomatopoda)</h3>
-            <img src="img/s-v.png" alt="Imagem de um Stomatopoda olhando fixamente para a camera">
-            <p>
-                Os estomatópodes têm a visão mais complexa do reino animal, <strong>superando até a das
-                borboletas</strong>.
-                O camarão mantis tem olhos compostos montados em talos e pode girá-los independentemente um do outro
-                para examinar seus arredores. Enquanto os humanos têm três tipos de fotorreceptores, os olhos do camarão
-                mantis têm entre 12 e 16 tipos de células fotorreceptoras. Algumas espécies podem até ajustar a
-                sensibilidade de sua visão de cores.
-            </p>
-        </section>
-        <section class="procreation">
-            <h3>Procriação</h3>
-            <img src="img/s-p.png" alt="Imagem de um Stomatopoda acasalando">
-            <p>
-                Em média, um camarão mantis vive 20 anos. Durante sua vida, <strong>ele pode se reproduzir de 20 a 30
-                vezes</strong>.
-                Em algumas espécies, a única interação entre machos e fêmeas ocorre durante o acasalamento. A fêmea põe
-                ovos em sua toca ou os carrega consigo. Em outras espécies, os camarões acasalam em relações monogâmicas
-                e duradouras, com ambos os sexos cuidando dos ovos. Após a eclosão, a prole passa três meses como
-                zooplâncton antes de mudar para a forma adulta.
-            </p>
-        </section>
-        <section class="video">
-            <h3>Stomatopoda em ação</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/E0Li1k5hGBE"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-            <a href="https://youtu.be/E0Li1k5hGBE">Ver no Youtube</a>
-        </section>
-    </article>
-    <aside>
-        <h4>Referencias</h4>
-        <ul>
-            <li><a href="https://encurtador.com.br/hlvJP">Wikipedia</a></li>
-            <li><a href="https://encurtador.com.br/LNTZ6">Greelane</a></li>
-        </ul>
-    </aside>
-</main>
+<div class="container">
+    <header>
+        <h1>Soco a 80Km/h: Conheça o Stomatopoda</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Fatos sobre o Stomatopoda</h2>
+            <section class="general-information">
+                <h3>Informações Gerais</h3>
+                <table>
+                    <caption><i>Odontodactylus Scyllarus</i></caption>
+                    <thead>
+                    <tr>
+                        <th>Reino</th>
+                        <th>Filo</th>
+                        <th>Subfilo</th>
+                        <th>Classe</th>
+                        <th>Subclasse</th>
+                        <th>Ordem</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Animal</td>
+                        <td>Antrópodes</td>
+                        <td>Crustáceo</td>
+                        <td>Malacostraca</td>
+                        <td>Hoplocarida</td>
+                        <td>Stomatopoda</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="vision">
+                <h3>Olhos de Águia (ou de Stomatopoda)</h3>
+                <div>
+                    <img src="img/s-v.png" alt="Imagem de um Stomatopoda olhando fixamente para a camera">
+                    <div class="content">
+                        <p>
+                            Os estomatópodes têm a visão mais complexa do reino animal, <strong>superando até a das
+                            borboletas</strong>.
+                            O camarão mantis tem olhos compostos montados em talos e pode girá-los independentemente um do outro
+                            para examinar seus arredores. Enquanto os humanos têm três tipos de fotorreceptores, os olhos do
+                            camarão
+                            mantis têm entre 12 e 16 tipos de células fotorreceptoras. Algumas espécies podem até ajustar a
+                            sensibilidade de sua visão de cores.
+                        </p>
+                        <a href="#1" class="button button-primary">Ler mais</a>
+                    </div>
+                </div>
+            </section>
+            <section class="procreation">
+                <h3>Procriação</h3>
+                <div>
+                    <img src="img/s-p.png" alt="Imagem de um Stomatopoda acasalando">
+                    <div class="content">
+                        <p>
+                            Em média, um camarão mantis vive 20 anos. Durante sua vida, <strong>ele pode se reproduzir de 20 a
+                            30
+                            vezes</strong>.
+                            Em algumas espécies, a única interação entre machos e fêmeas ocorre durante o acasalamento. A fêmea
+                            põe
+                            ovos em sua toca ou os carrega consigo. Em outras espécies, os camarões acasalam em relações
+                            monogâmicas
+                            e duradouras, com ambos os sexos cuidando dos ovos. Após a eclosão, a prole passa três meses como
+                            zooplâncton antes de mudar para a forma adulta.
+                        </p>
+                        <a href="#2" class="button button-primary">Ler mais</a>
+                    </div>
+                </div>
+            </section>
+            <div class="video-references">
+                <section class="video">
+                    <h3>Stomatopoda em ação</h3>
+                    <div class="iframe">
+                        <iframe src="https://www.youtube.com/embed/E0Li1k5hGBE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    </div>
+                    <a href="https://youtu.be/E0Li1k5hGBE" target="_blank" class="button button-primary button-100">Ver no Youtube</a>
+                </section>
+                <aside class="references">
+                    <h3>Referencias</h3>
+                    <ul>
+                        <li><a href="https://pt.wikipedia.org/wiki/Odontodactylus_scyllarus" target="_blank">Wikipedia</a></li>
+                        <li><a href="https://www.greelane.com/pt/ci%C3%AAncia-tecnologia-matem%C3%A1tica/animais-e-natureza/mantis-shrimp-facts-4582442/" target="_blank">Greelane</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=E0Li1k5hGBE">Youtube</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </article>
+    </main>
+</div>
 <footer>
     Conteúdo compilado por Willian Mendes, 2021.
 </footer>
