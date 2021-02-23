@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #036b52;
+    padding: 0 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 16px;
+}
+
+nav ul li a:hover {
+    color: #18B892;
+    transition-duration: 1s;
+}
+
+nav ul li a:active{
+    color: #fff;
+    text-shadow: 0 0 #000;
+    transition-duration: 0.5s;
+}
+
+.container {
+    max-width: 980px;
+    margin: 16px auto;
+}
+
+.container p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+h1, h3 {
+    border-bottom: 3px solid #036b52;
+}
+
+.general-information, .vision, .procreation, .video, .references {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.vision div, .procreation div, .video div {
+    display: flex;
+}
+
+.vision img, .procreation img {
+    width: 350px;
+    margin-right: 16px;
+    border: 2px solid #036b52;
+    border-radius: 12px;
+}
+
+.vision .content, .procreation .content, .video .content {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.video-references {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video, .references {
+    width: calc(50% - 8px);
+}
+
+.video {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.video .iframe {
+    width: 100%;
+    padding-top: 56.25%;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 3px solid #036b52;
+    border-radius: 8px;
+}
+
+.references ul {
+    list-style: none;
+}
+
+.references ul li {
+    padding: 4px 0;
+}
+
+.references ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+}
+
+.references ul li a:hover {
+    color: #18B892;
+    transition-duration: 1s;
+}
+
+.references ul li a:active{
+    color: #fff;
+    text-shadow: 0 0 #000;
+    transition-duration: 0.5s;
+}
+
+.general-information table {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+.general-information table caption {
+    background-color: #036b52;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.general-information table th {
+    background-color: #036b52;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.general-information table th, td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.general-information table td {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.general-information table tr:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.general-information table tr:hover {
+    background-color: #ddd;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+}
+
+.button-100 {
+    width: 100%;
+    text-align: center;
+}
+
+.button-primary {
+    background-color: #036b52;
+    color: #fff;
+    transition-duration: 1s;
+}
+
+.button-primary:hover {
+    background-color: #18B892;
+    color: #fff;
+}
+
+.button-primary:active {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+}
+
+footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
