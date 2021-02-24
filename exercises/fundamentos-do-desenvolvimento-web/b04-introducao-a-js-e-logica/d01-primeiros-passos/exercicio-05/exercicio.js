@@ -16,3 +16,7 @@ function multiplication(a, b) {
 function division(a, b) {
   return a / b;
 }
+
+function rest(a, b) {
+  return a % b;
+}
