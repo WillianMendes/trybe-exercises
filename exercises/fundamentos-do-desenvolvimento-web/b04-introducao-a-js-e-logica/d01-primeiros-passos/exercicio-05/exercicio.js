@@ -20,3 +20,9 @@ function division(a, b) {
 function rest(a, b) {
   return a % b;
 }
+
+console.log(sum(a, b));
+console.log(sub(a, b));
+console.log(multiplication(a, b));
+console.log(division(a, b));
+console.log(rest(a, b));
