@@ -69,8 +69,8 @@ console.log('......................................');
 
 /**
  * Exercício 6
- * Para o segundo exercício, você deve somar todos os valores contidos no array
- * e imprimir o resultado;
+ * Descubra quantos valores ímpares existem no array e imprima o resultado.
+ * Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
  */
 console.log('Exercício 6 --------------------------');
 let countOdd = 0;
