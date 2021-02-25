@@ -1,5 +1,10 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+console.log('......................................');
+console.log('......................................');
+console.log('..... Módulo 1 | Bloco 4 | Dia 2 .....');
+console.log('......................................');
+console.log('......................................');
 
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 /**
  * Exercício 1
@@ -111,3 +116,14 @@ for (let index = 1; index <= 25; index+=1) {
 }
 console.log('Array criado com um for: ' + arrayNumber);
 console.log('......................................');
+
+/**
+ * Exercício 9
+ * Utilizando o array criado no exercício anterior imprima o resultado da
+ * divisão de cada um dos elementos por 2 .
+ */
+console.log('Exercício 9 --------------------------');
+for (let index = 0; index < 25; index+=1) {
+  console.log('Resultado de (' + arrayNumber[index] + ' / 2): ' + arrayNumber[index] / 2)
+}
+console.log('......................................' + "\n\n");
