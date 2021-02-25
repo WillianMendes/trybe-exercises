@@ -54,8 +54,7 @@ console.log('......................................');
 
 /**
  * Exercício 5
- * Para o segundo exercício, você deve somar todos os valores contidos no array
- * e imprimir o resultado;
+ * Utilizando for, descubra qual o maior valor contido no array e imprima-o;
  */
 console.log('Exercício 5 --------------------------');
 let higherNumber = 0;
