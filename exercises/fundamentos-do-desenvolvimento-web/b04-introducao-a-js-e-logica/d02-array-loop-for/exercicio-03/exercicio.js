@@ -85,3 +85,17 @@ if (countOdd > 0) {
   console.log('Nenhum valor ímpar encontrado.');
 }
 console.log('......................................');
+
+/**
+ * Exercício 7
+ * Utilizando for, descubra qual o menor valor contido no array e imprima-o;
+ */
+console.log('Exercício 7 --------------------------');
+let lowestNumber;
+for (let index = 0; index < numbers.length; index+=1) {
+  if (numbers[index] < lowestNumber || lowestNumber === undefined) {
+    lowestNumber = numbers[index];
+  }
+}
+console.log('O menor numero do array: ' + lowestNumber);
+console.log('......................................');
