@@ -24,3 +24,18 @@ for (let index = 0; index < numbers.length; index+=1) {
 }
 console.log('Soma de todos os itens do array: ' + sum);
 console.log('......................................');
+
+/**
+ * Exercício 3
+ * Para o terceiro exercício, calcule e imprima a média aritmética dos valores
+ * contidos no array;
+ */
+console.log('Exercício 3 --------------------------');
+let media;
+let sumForMedia = 0;
+for (let index = 0; index < numbers.length; index+=1) {
+  sumForMedia += numbers[index];
+  media = sumForMedia / (numbers.length + 1);
+}
+console.log('Media de todos os itens do array: ' + media);
+console.log('......................................');
