@@ -66,3 +66,23 @@ for (let index = 0; index < numbers.length; index+=1) {
 }
 console.log('O maior numero do array: ' + higherNumber);
 console.log('......................................');
+
+/**
+ * Exercício 6
+ * Para o segundo exercício, você deve somar todos os valores contidos no array
+ * e imprimir o resultado;
+ */
+console.log('Exercício 6 --------------------------');
+let countOdd = 0;
+for (let index = 0; index < numbers.length; index+=1) {
+  if (numbers[index] % 2 !== 0) {
+    countOdd += 1;
+  }
+}
+
+if (countOdd > 0) {
+  console.log('Quantidade de números ímpares no array: ' + countOdd);
+} else {
+  console.log('Nenhum valor ímpar encontrado.');
+}
+console.log('......................................');
