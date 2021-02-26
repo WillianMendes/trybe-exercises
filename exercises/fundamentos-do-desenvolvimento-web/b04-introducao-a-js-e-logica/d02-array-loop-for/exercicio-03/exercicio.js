@@ -127,3 +127,22 @@ for (let index = 0; index < 25; index+=1) {
   console.log('Resultado de (' + arrayNumber[index] + ' / 2): ' + arrayNumber[index] / 2)
 }
 console.log('......................................' + "\n\n");
+
+/**
+ * Exercício 10
+ * Ordene o array numbers em ordem crescente e imprima seus valores;
+ */
+console.log('Exercício 10 --------------------------');
+for (let i = 1; i < numbers.length; i++) {
+  for (let j = 0; j < i; j++) {
+    if (numbers[i] < numbers[j]) {
+      let position = numbers[i];
+
+      numbers[i] = numbers[j];
+      numbers[j] = position;
+    }
+  }
+}
+console.log('Array ordenado (crescente): ' + numbers);
+console.log('......................................');
+
