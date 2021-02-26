@@ -12,7 +12,7 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
  * contidos com a função console.log() ;
  */
 console.log('Exercício 1 --------------------------');
-for (let index = 0; index < numbers.length; index+=1) {
+for (let index = 0; index < numbers.length; index += 1) {
   console.log('Numbers posição[' + index + ']: ' + numbers[index]);
 }
 console.log('......................................');
@@ -24,7 +24,7 @@ console.log('......................................');
  */
 console.log('Exercício 2 --------------------------');
 let sum = 0;
-for (let index = 0; index < numbers.length; index+=1) {
+for (let index = 0; index < numbers.length; index += 1) {
   sum += numbers[index];
 }
 console.log('Soma de todos os itens do array: ' + sum);
@@ -43,7 +43,7 @@ console.log('......................................');
 console.log('Exercício 3 e 4 --------------------------');
 let media;
 let sumForMedia = 0;
-for (let index = 0; index < numbers.length; index+=1) {
+for (let index = 0; index < numbers.length; index += 1) {
   sumForMedia += numbers[index];
   media = sumForMedia / (numbers.length + 1);
 }
@@ -63,7 +63,7 @@ console.log('......................................');
  */
 console.log('Exercício 5 --------------------------');
 let higherNumber = 0;
-for (let index = 0; index < numbers.length; index+=1) {
+for (let index = 0; index < numbers.length; index += 1) {
   if (numbers[index] > higherNumber) {
     higherNumber = numbers[index];
   }
@@ -78,7 +78,7 @@ console.log('......................................');
  */
 console.log('Exercício 6 --------------------------');
 let countOdd = 0;
-for (let index = 0; index < numbers.length; index+=1) {
+for (let index = 0; index < numbers.length; index += 1) {
   if (numbers[index] % 2 !== 0) {
     countOdd += 1;
   }
@@ -97,7 +97,7 @@ console.log('......................................');
  */
 console.log('Exercício 7 --------------------------');
 let lowestNumber;
-for (let index = 0; index < numbers.length; index+=1) {
+for (let index = 0; index < numbers.length; index += 1) {
   if (numbers[index] < lowestNumber || lowestNumber === undefined) {
     lowestNumber = numbers[index];
   }
@@ -111,7 +111,7 @@ console.log('......................................');
  */
 console.log('Exercício 8 --------------------------');
 let arrayNumber = [];
-for (let index = 1; index <= 25; index+=1) {
+for (let index = 1; index <= 25; index += 1) {
   arrayNumber.push(index);
 }
 console.log('Array criado com um for: ' + arrayNumber);
@@ -123,10 +123,12 @@ console.log('......................................');
  * divisão de cada um dos elementos por 2 .
  */
 console.log('Exercício 9 --------------------------');
-for (let index = 0; index < 25; index+=1) {
-  console.log('Resultado de (' + arrayNumber[index] + ' / 2): ' + arrayNumber[index] / 2)
+for (let index = 0; index < 25; index += 1) {
+  console.log(
+      'Resultado de (' + arrayNumber[index] + ' / 2): ' + arrayNumber[index] /
+      2);
 }
-console.log('......................................' + "\n\n");
+console.log('......................................' + '\n\n');
 
 /**
  * Exercício 10
@@ -162,4 +164,28 @@ for (let i = 1; i < numbers.length; i++) {
   }
 }
 console.log('Array ordenado (decrescente): ' + numbers);
+console.log('......................................');
+
+/**
+ * Exercício 12
+ * Agora você irá criar um novo array a partir do array numbers , sem perdê-lo.
+ * Cada valor do novo array deverá ser igual ao valor correspondente no array
+ * numbers multiplicado pelo seguinte. Por exemplo: o primeiro valor do novo
+ * array deverá ser 45, pois é a multiplicação de 5 (primeiro valor) e 9
+ * (valor seguinte). Já o segundo valor do novo array deverá ser 27, pois é a
+ * multiplicação de 9 (segundo valor) e 3 (valor seguinte), e assim por diante.
+ * Caso não haja próximo valor, a multiplicação deverá ser feita por 2.
+ * Faça isso utilizando o for e o método push . O resultado deve ser o array abaixo:
+ */
+console.log('Exercício 12 --------------------------');
+numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let copyNumbers = [];
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index + 1] === undefined) {
+    copyNumbers.push(numbers[index] * 2);
+  } else {
+    copyNumbers.push(numbers[index] * numbers [index + 1]);
+  }
+}
+console.log('Resultado: ' + copyNumbers);
 console.log('......................................');
