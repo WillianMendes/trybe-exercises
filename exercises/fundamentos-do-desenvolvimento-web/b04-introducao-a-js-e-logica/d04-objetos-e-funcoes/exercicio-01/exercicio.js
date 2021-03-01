@@ -6,7 +6,6 @@ console.log('......................................');
 
 /**
  * Exercício 1
- * Item A
  * Imprima no console uma mensagem de boas-vindas para a personagem acima,
  * incluindo seu nome.
  */
@@ -19,8 +18,7 @@ let info = {
 console.log('Bem-vinda ' + info.personagem);
 
 /**
- * Exercício 1
- * Item B
+ * Exercício 2
  * Insira no objeto uma nova propriedade com o nome de chave "recorrente" e o
  * valor "Sim" e, em seguida, imprima o objeto no console.
  */
