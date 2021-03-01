@@ -52,6 +52,7 @@ console.log(returnIndexLargestValue(numbers));
 console.log('......................................');
 
 /**
+ * Exercício 8
  * Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
  * Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
  * Valor esperado no retorno da função: 6 .
@@ -70,4 +71,27 @@ function returnIndexSmallValue (arrayInteger) {
 }
 let numbers2 = [2, 4, 6, 7, 10, 0, -3];
 console.log(returnIndexSmallValue(numbers2));
+console.log('......................................');
+
+/**
+ * Exercício 9
+ * Crie uma função que receba um array de nomes e retorne o nome com a maior
+ * quantidade de caracteres.
+ * Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; .
+ * Valor esperado no retorno da função: Fernanda .
+ */
+console.log('Exercício 9 --------------------------');
+function searchStringLargestCharacters (arrayNames) {
+  let numberCharName = arrayNames[0].length;
+  let nameLargest = arrayNames[0];
+  for (let index = 0; index < arrayNames.length; index += 1) {
+    if (arrayNames[index].length > numberCharName) {
+      nameLargest = arrayNames[index];
+      numberCharName = arrayNames[index].length;
+    }
+  }
+  return nameLargest;
+}
+let names = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+console.log(searchStringLargestCharacters(names));
 console.log('......................................');
