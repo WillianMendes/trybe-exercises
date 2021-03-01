@@ -50,3 +50,24 @@ function returnIndexLargestValue (arrayInteger) {
 let numbers = [2, 3, 6, 7, 10, 1];
 console.log(returnIndexLargestValue(numbers));
 console.log('......................................');
+
+/**
+ * Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+ * Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
+ * Valor esperado no retorno da função: 6 .
+ */
+console.log('Exercício 8 --------------------------');
+function returnIndexSmallValue (arrayInteger) {
+  let keySmallValue = 0;
+
+  for (let index = 0; index < arrayInteger.length; index += 1) {
+    if(arrayInteger[index] <= arrayInteger[keySmallValue]) {
+      arrayInteger[keySmallValue] = arrayInteger[index];
+      keySmallValue = index;
+    }
+  }
+  return keySmallValue;
+}
+let numbers2 = [2, 4, 6, 7, 10, 0, -3];
+console.log(returnIndexSmallValue(numbers2));
+console.log('......................................');
