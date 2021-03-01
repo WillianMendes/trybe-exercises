@@ -32,3 +32,11 @@ console.log(info);
 for (const infoKey in info) {
   console.log(infoKey);
 }
+
+/**
+ * Exercício 4
+ * Faça um novo for/in , mas agora mostre todos os valores das chaves do objeto.
+ */
+for (const infoKey in info) {
+  console.log(info[infoKey]);
+}
