@@ -24,3 +24,11 @@ console.log('Bem-vinda ' + info.personagem);
  */
 info['recorrente'] = 'Sim';
 console.log(info);
+
+/**
+ * Exercício 3
+ * Faça um for/in que mostre todas as chaves do objeto.
+ */
+for (const infoKey in info) {
+  console.log(infoKey);
+}
