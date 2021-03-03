@@ -49,6 +49,16 @@
   function changeTextToUpperCase(element) {
     document.getElementsByTagName(element)[0].style.textTransform = 'uppercase';
   }
+
+  /**
+   * 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+   */
+  function logForElement(element) {
+    let elements = document.getElementsByTagName(element);
+    for (let item of elements) {
+      console.log(item);
+    }
+  }
 </script>
 </body>
 </html>
