@@ -69,3 +69,22 @@ firstChildOfChild.append(childOfFirstChildOfChild);
  * A partir desse filho criado, acesse terceiroFilho.
  */
 let childOfFirstChildOfChild2 = firstChildOfChild.firstElementChild;
+
+/***********************************
+ ************* PARTE 3 *************
+ ***********************************/
+
+/**
+ * Remova todos os elementos da página, menos pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+ */
+let fatherOfFather = document.getElementById('paiDoPai');
+for (let children of fatherOfFather.children) {
+  for (let children2 of children.children) {
+    if (children2.id !== 'pai' && children2.id !== 'elementoOndeVoceEsta' && children2.id !== 'primeiroFilhoDoFilho') {
+      children.removeChild(children2);
+    }
+  }
+  if (children.id !== 'pai' && children.id !== 'elementoOndeVoceEsta' && children.id !== 'primeiroFilhoDoFilho') {
+    fatherOfFather.removeChild(children);
+  }
+}
