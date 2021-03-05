@@ -39,3 +39,33 @@ let thirdChild = elementBase.nextElementSibling;
  * Agora acesse o terceiroFilho a partir de pai.
  */
 let thirdChild2 = fatherElement.firstElementChild.nextElementSibling.nextElementSibling;
+
+/***********************************
+ ************* PARTE 2 *************
+ ***********************************/
+
+/**
+ * Crie um irmão para elementoOndeVoceEsta.
+ */
+let brotherElementBase = document.createElement('div');
+brotherElementBase.id = 'brother';
+fatherElement.append(brotherElementBase);
+
+/**
+ * Crie um filho para elementoOndeVoceEsta.
+ */
+let childElementBase = document.createElement('div');
+childElementBase.id = 'childElementBase';
+elementBase.append(childElementBase);
+
+/**
+ * Crie um filho para primeiroFilhoDoFilho.
+ */
+let childOfFirstChildOfChild = document.createElement('div');
+childOfFirstChildOfChild.id = 'childOfFirstChildOfChild';
+firstChildOfChild.append(childOfFirstChildOfChild);
+
+/**
+ * A partir desse filho criado, acesse terceiroFilho.
+ */
+let childOfFirstChildOfChild2 = firstChildOfChild.firstElementChild;
