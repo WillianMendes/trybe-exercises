@@ -148,3 +148,25 @@ function calculateSum(number) {
 }
 console.log(calculateSum(5));
 console.log('......................................');
+
+/**
+ * Exercício 12
+ * Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
+ * Valor de teste: "trybe" e "be"
+ * Valor esperado no retorno da função: true
+ * verificaFimPalavra("trybe", "be");
+ * Retorno esperado: true
+ * verificaFimPalavra("joaofernando", "fernan");
+ * Retorno esperado: false
+ */
+console.log('Exercício 12 -------------------------');
+function checkEndString(word, ending) {
+  for (let index = word.length; index > word.length - 2; index -= 1) {
+    if (word.substring(word.length - 2, word.length) === ending) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(checkEndString('joaofernando', 'fernan'));
+console.log('......................................');
