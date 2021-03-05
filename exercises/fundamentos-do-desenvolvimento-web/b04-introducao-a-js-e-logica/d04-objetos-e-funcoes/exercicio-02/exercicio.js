@@ -95,3 +95,31 @@ function searchStringLargestCharacters (arrayNames) {
 let names = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 console.log(searchStringLargestCharacters(names));
 console.log('......................................');
+
+/**
+ * Exercício 10
+ * Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+ * Array de teste: [2, 3, 2, 5, 8, 2, 3];
+ * * Valor esperado no retorno da função: 2
+ */
+console.log('Exercício 10 -------------------------');
+let mostRepeated = 0;
+let countRepeated = 0;
+function calculateMostRepeated(arrayNumbers) {
+  for (let index = 0; index < arrayNumbers.length; index += 1) {
+    let actualCountRepeated = 0;
+    for (let j = 0; j < arrayNumbers.length; j += 1) {
+      if (arrayNumbers[index] === arrayNumbers[j]) {
+        actualCountRepeated += 1;
+      }
+    }
+    if (actualCountRepeated > countRepeated) {
+      mostRepeated = arrayNumbers[index];
+      countRepeated = actualCountRepeated;
+    }
+  }
+  return mostRepeated;
+}
+let arrayTest = [2, 3, 2, 5, 8, 2, 3];
+console.log(calculateMostRepeated(arrayTest));
+console.log('......................................');
