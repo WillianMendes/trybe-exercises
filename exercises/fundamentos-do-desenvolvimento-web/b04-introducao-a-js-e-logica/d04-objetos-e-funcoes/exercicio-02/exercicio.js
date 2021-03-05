@@ -123,3 +123,28 @@ function calculateMostRepeated(arrayNumbers) {
 let arrayTest = [2, 3, 2, 5, 8, 2, 3];
 console.log(calculateMostRepeated(arrayTest));
 console.log('......................................');
+
+/**
+ * Exercício 11
+ * Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
+ * Valor de teste: N = 5 .
+ * Valor esperado no retorno da função: 1+2+3+4+5 = 15 .
+ */
+console.log('Exercício 11 -------------------------');
+let sum = 0;
+let sumString = '';
+function calculateSum(number) {
+  for (let index = 1; index <= number; index += 1) {
+    sum += index;
+    if (index === (number - 1)) {
+      sumString += index;
+    } else if (index === number) {
+      sumString += '+' + index + '=' + sum;
+    }  else {
+      sumString += index + '+';
+    }
+  }
+  return sumString;
+}
+console.log(calculateSum(5));
+console.log('......................................');
