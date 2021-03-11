@@ -57,4 +57,43 @@ divEx2.appendChild(divEx6);
  */
 const imgEx7 = document.createElement('img');
 imgEx7.setAttribute('src', 'https://picsum.photos/200');
+imgEx7.classList.add('small-image');
 divEx5.appendChild(imgEx7);
+
+/**
+ * Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como
+ * valores da lista. Essa lista deve ser filha do div criado no passo 6;
+ */
+const ulEx8 = document.createElement('ul');
+const li1 = document.createElement('li');
+const li2 = document.createElement('li');
+const li3 = document.createElement('li');
+const li4 = document.createElement('li');
+const li5 = document.createElement('li');
+const li6 = document.createElement('li');
+const li7 = document.createElement('li');
+const li8 = document.createElement('li');
+const li9 = document.createElement('li');
+const li10 = document.createElement('li');
+li1.innerText = 'Um';
+li2.innerText = 'Dois';
+li3.innerText = 'Tres';
+li4.innerText = 'Quatro';
+li5.innerText = 'Cinco';
+li6.innerText = 'Seis';
+li7.innerText = 'Sete';
+li8.innerText = 'Oito';
+li9.innerText = 'Nove';
+li10.innerText = 'Dez';
+divEx6.appendChild(ulEx8);
+ulEx8.appendChild(li1);
+ulEx8.appendChild(li2);
+ulEx8.appendChild(li3);
+ulEx8.appendChild(li4);
+ulEx8.appendChild(li5);
+ulEx8.appendChild(li6);
+ulEx8.appendChild(li7);
+ulEx8.appendChild(li8);
+ulEx8.appendChild(li9);
+ulEx8.appendChild(li10);
+
