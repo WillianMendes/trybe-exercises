@@ -43,9 +43,10 @@ divEx5.classList.add('left-content');
 divEx2.appendChild(divEx5);
 
 /**
- * Adicione a tag div com a classe right-content como filho da tag div criada no
- * passo 2;
+ * Adicione uma imagem com src configurado para o valor
+ * https://picsum.photos/200 e classe small-image.
+ * Esse elemento deve ser filho do div criado no passo 5;
  */
-const divEx6 = document.createElement('div');
-divEx6.classList.add('right-content');
-divEx2.appendChild(divEx6);
+const imgEx7 = document.createElement('img');
+imgEx7.setAttribute('src', 'https://picsum.photos/200');
+divEx5.appendChild(imgEx7);
