@@ -33,3 +33,11 @@ divEx2.appendChild(divEx3);
 const pEx4 = document.createElement('p');
 pEx4.innerText = 'Um texto qualquer';
 divEx3.appendChild(pEx4);
+
+/**
+ * Adicione a tag div com a classe left-content como filho da tag div criada no
+ * passo 2;
+ */
+const divEx5 = document.createElement('div');
+divEx5.classList.add('left-content');
+divEx2.appendChild(divEx5);
