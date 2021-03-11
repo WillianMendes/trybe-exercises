@@ -119,3 +119,9 @@ const h3Result = document.getElementsByTagName('h3');
 for (let i = 0; i < h3Result.length; i += 1) {
   h3Result[i].classList.add('description');
 }
+
+/**
+ * Remova o div criado no passo 5 (aquele que possui a classe left-content ).
+ * Utilize a função .removeChild() ;
+ */
+divEx2.removeChild(divEx5);
