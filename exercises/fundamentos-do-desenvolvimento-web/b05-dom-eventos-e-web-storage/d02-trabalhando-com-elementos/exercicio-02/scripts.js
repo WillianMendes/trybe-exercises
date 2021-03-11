@@ -106,3 +106,8 @@ const h3Ex93 = document.createElement('h3');
 divEx2.appendChild(h3Ex91);
 divEx2.appendChild(h3Ex92);
 divEx2.appendChild(h3Ex93);
+
+/**
+ * Adicione a classe title na tag h1 criada;
+ */
+title.classList.add('title');
