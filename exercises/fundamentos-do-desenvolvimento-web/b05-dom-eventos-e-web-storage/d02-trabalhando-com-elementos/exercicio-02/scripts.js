@@ -111,3 +111,11 @@ divEx2.appendChild(h3Ex93);
  * Adicione a classe title na tag h1 criada;
  */
 title.classList.add('title');
+
+/**
+ * Adicione a classe description nas 3 tags h3 criadas;
+ */
+const h3Result = document.getElementsByTagName('h3');
+for (let i = 0; i < h3Result.length; i += 1) {
+  h3Result[i].classList.add('description');
+}
