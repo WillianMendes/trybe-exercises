@@ -25,4 +25,11 @@ document.getElementsByTagName('body')[0].appendChild(divEx2);
  */
 const divEx3 = document.createElement('div');
 divEx3.classList.add('center-content');
-document.getElementsByClassName('main-content')[0].appendChild(divEx3);
+divEx2.appendChild(divEx3);
+
+/**
+ * Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+ */
+const pEx4 = document.createElement('p');
+pEx4.innerText = 'Um texto qualquer';
+divEx3.appendChild(pEx4);
