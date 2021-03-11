@@ -41,3 +41,11 @@ divEx3.appendChild(pEx4);
 const divEx5 = document.createElement('div');
 divEx5.classList.add('left-content');
 divEx2.appendChild(divEx5);
+
+/**
+ * Adicione a tag div com a classe right-content como filho da tag div criada no
+ * passo 2;
+ */
+const divEx6 = document.createElement('div');
+divEx6.classList.add('right-content');
+divEx2.appendChild(divEx6);
