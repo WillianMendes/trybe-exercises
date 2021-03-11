@@ -97,3 +97,12 @@ ulEx8.appendChild(li8);
 ulEx8.appendChild(li9);
 ulEx8.appendChild(li10);
 
+/**
+ * Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+ */
+const h3Ex91 = document.createElement('h3');
+const h3Ex92 = document.createElement('h3');
+const h3Ex93 = document.createElement('h3');
+divEx2.appendChild(h3Ex91);
+divEx2.appendChild(h3Ex92);
+divEx2.appendChild(h3Ex93);
