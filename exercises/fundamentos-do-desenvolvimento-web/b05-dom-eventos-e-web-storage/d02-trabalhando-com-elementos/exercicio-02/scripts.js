@@ -18,3 +18,11 @@ document.getElementsByTagName('body')[0].appendChild(title);
 const divEx2 = document.createElement('div');
 divEx2.classList.add('main-content');
 document.getElementsByTagName('body')[0].appendChild(divEx2);
+
+/**
+ * Adicione a tag div com a classe center-content como filho da tag div criada
+ * no passo 2;
+ */
+const divEx3 = document.createElement('div');
+divEx3.classList.add('center-content');
+document.getElementsByClassName('main-content')[0].appendChild(divEx3);
