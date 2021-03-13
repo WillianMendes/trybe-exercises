@@ -108,3 +108,20 @@ function addEventButtonFriday() {
     }
   });
 }
+
+function animateDays() {
+  let days = document.getElementsByClassName('day');
+  for (let i = 0; i < days.length; i += 1) {
+    days[i].addEventListener('mouseover', function(event) {
+      let day = event.currentTarget;
+      day.style.fontSize = '32px';
+    });
+  }
+  for (let i = 0; i < days.length; i += 1) {
+    days[i].addEventListener('mouseout', function(event) {
+      let day = event.currentTarget;
+      day.style.fontSize = '20px';
+    });
+  }
+}
+animateDays();
