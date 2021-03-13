@@ -137,3 +137,9 @@ divEx6.style.marginRight = 'auto';
  * (aquela que possui a classe center-content ) para a cor verde;
  */
 divEx3.parentElement.style.backgroundColor = 'green';
+
+/**
+ * Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+ */
+ulEx8.lastElementChild.remove();
+ulEx8.lastElementChild.remove();
