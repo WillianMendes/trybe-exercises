@@ -131,3 +131,9 @@ divEx2.removeChild(divEx5);
  * Dica: para centralizar, basta configurar o margin-right: auto do div ;
  */
 divEx6.style.marginRight = 'auto';
+
+/**
+ * Troque a cor de fundo do elemento pai da div criada no passo 3
+ * (aquela que possui a classe center-content ) para a cor verde;
+ */
+divEx3.parentElement.style.backgroundColor = 'green';
