@@ -73,4 +73,38 @@ function addEventButtonHoliday() {
 }
 
 //Exercício 4
+function fridays() {
+  const buttonContainer = document.getElementsByClassName('buttons-container')[0];
+  const buttonFriday = document.createElement('button');
+  buttonFriday.id = 'btn-friday';
+  buttonFriday.innerText = 'Sexta-Feira';
+  buttonContainer.appendChild(buttonFriday);
+  addEventButtonFriday();
+}
+fridays();
 
+//Exercício 5
+let fridaysActive = false;
+function addEventButtonFriday() {
+  const buttonFriday = document.getElementById('btn-friday');
+  buttonFriday.addEventListener('click', function() {
+    const fridays = document.getElementsByClassName('friday');
+    if (fridaysActive === true) {
+      const days = document.getElementsByClassName('day');
+      countSeven = 0;
+      for (let i = 0; i < days.length; i += 1) {
+        countSeven += 1;
+        if ((countSeven + 1) % 7 === 0) {
+          days[i].classList.add('friday');
+          days[i].innerText = dezDaysList[i].toString();
+        }
+      }
+      fridaysActive = false;
+    } else {
+      for (let i = 0; i < fridays.length; i += 1) {
+        fridays[i].innerText = 'Sextou';
+      }
+      fridaysActive = true;
+    }
+  });
+}
