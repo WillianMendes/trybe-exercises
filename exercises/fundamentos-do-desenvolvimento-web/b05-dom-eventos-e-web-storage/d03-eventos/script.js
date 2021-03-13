@@ -109,6 +109,7 @@ function addEventButtonFriday() {
   });
 }
 
+//Exercício 6
 function animateDays() {
   let days = document.getElementsByClassName('day');
   for (let i = 0; i < days.length; i += 1) {
@@ -125,3 +126,14 @@ function animateDays() {
   }
 }
 animateDays();
+
+//Exercício 7
+function addTask(task = document.getElementById('task-input').value) {
+  const taskElement = document.createElement('p');
+  const myTasks = document.getElementsByClassName('my-tasks');
+  taskElement.innerText = task;
+  myTasks[0].appendChild(taskElement);
+}
+document.getElementById('btn-add').addEventListener('click', function() {
+  addTask();
+});
