@@ -25,9 +25,9 @@
 
 - **Introdução à HTML e CSS** :heavy_check_mark:
 
-- **Introdução à JavaScript e Lógica de Programação** :hourglass:
+- **Introdução à JavaScript e Lógica de Programação** :heavy_check_mark:
 
-- **JavaScript: DOM, Eventos e Web Storage** :hourglass:
+- **JavaScript: DOM, Eventos e Web Storage** :heavy_check_mark:
 
 - **HTML e CSS; Forms, Flexbox e Responsivo** :hourglass:
 
