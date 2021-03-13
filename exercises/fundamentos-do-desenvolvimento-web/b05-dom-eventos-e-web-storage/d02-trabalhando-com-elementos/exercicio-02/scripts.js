@@ -125,3 +125,9 @@ for (let i = 0; i < h3Result.length; i += 1) {
  * Utilize a função .removeChild() ;
  */
 divEx2.removeChild(divEx5);
+
+/**
+ * Centralize o div criado no passo 6 (aquele que possui a classe right-content).
+ * Dica: para centralizar, basta configurar o margin-right: auto do div ;
+ */
+divEx6.style.marginRight = 'auto';
