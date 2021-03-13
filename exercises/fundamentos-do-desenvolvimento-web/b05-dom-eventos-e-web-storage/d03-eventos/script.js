@@ -42,3 +42,23 @@ function holidays(holiday) {
   buttonHoliday.innerText = 'Feriados';
   buttonContainer.appendChild(buttonHoliday);
 }
+
+//Exercício 3
+let holidaysActive = false;
+function addEventButtonHoliday() {
+  const buttonHoliday = document.getElementById('btn-holiday');
+  buttonHoliday.addEventListener('click', function() {
+    const holidays = document.getElementsByClassName('holiday');
+    if (holidaysActive === true) {
+      for (let i = 0; i < holidays.length; i += 1) {
+        holidays[i].classList.remove('holiday-fill');
+      }
+      holidaysActive = false;
+    } else {
+      for (let i = 0; i < holidays.length; i += 1) {
+        holidays[i].classList.add('holiday-fill');
+      }
+      holidaysActive = true;
+    }
+  });
+}
