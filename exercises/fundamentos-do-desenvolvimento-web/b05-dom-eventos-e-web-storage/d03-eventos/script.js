@@ -33,3 +33,12 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
   liItem.innerText = dezDaysList[i].toString();
   ulDays.appendChild(liItem);
 }
+
+//Exercício 2
+function holidays(holiday) {
+  const buttonContainer = document.getElementsByClassName('buttons-container')[0];
+  const buttonHoliday = document.createElement('button');
+  buttonHoliday.id = 'btn-holiday';
+  buttonHoliday.innerText = 'Feriados';
+  buttonContainer.appendChild(buttonHoliday);
+}
