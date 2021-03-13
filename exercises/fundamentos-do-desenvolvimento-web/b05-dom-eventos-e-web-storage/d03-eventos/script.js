@@ -35,13 +35,22 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
 }
 
 //Exercício 2
-function holidays(holiday) {
+function holidays(holidays = [12, 28]) {
   const buttonContainer = document.getElementsByClassName('buttons-container')[0];
   const buttonHoliday = document.createElement('button');
   buttonHoliday.id = 'btn-holiday';
   buttonHoliday.innerText = 'Feriados';
   buttonContainer.appendChild(buttonHoliday);
+  addEventButtonHoliday();
+  for (let i = 0; i < dezDaysList.length; i += 1) {
+    for (let j = 0; j < holidays.length; j += 1) {
+      if (holidays[j] === dezDaysList[i]) {
+        document.getElementsByClassName('day')[i].classList.add('holiday');
+      }
+    }
+  }
 }
+holidays();
 
 //Exercício 3
 let holidaysActive = false;
@@ -62,3 +71,6 @@ function addEventButtonHoliday() {
     }
   });
 }
+
+//Exercício 4
+
