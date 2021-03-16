@@ -1,0 +1,36 @@
+p {
+margin: 0 0 0.75rem 0;
+}
+
+input[type = text] , input[type = email] , select {
+    padding: 0.5rem 0.5rem;
+}
+
+input[type = radio] {
+    margin: 0 .5rem 0 0;
+}
+
+fieldset {
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    display: flex;
+    flex-flow: column;
+}
+
+.input-group:not( :last-child ) {
+    margin-bottom: 1rem;
+}
+
+.radio-group {
+    display: flex;
+    flex-flow: column;
+}
+
+.radio-group .radio-box {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}

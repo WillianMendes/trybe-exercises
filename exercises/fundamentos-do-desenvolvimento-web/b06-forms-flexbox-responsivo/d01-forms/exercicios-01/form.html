@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="scrips.js">
+    <fieldset >
+        <legend>Dados Pessoais</legend>
+        <div class="input-group">
+            <label for="text">Nome</label>
+            <input type="text" name="text" id="text" max="40" required>
+        </div>
+        <div class="input-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" max="50" required>
+        </div>
+        <div class="input-group">
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" max="11" required>
+        </div>
+        <div class="input-group">
+            <label for="estados">Estado</label>
+            <select name="estados" id="estados">
+                <option value="" selected>Selecione um Estado</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" id="cidade" max="28" required>
+        </div>
+        <div class="input-group">
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco" max="200" required>
+        </div>
+        <div class="radio-group">
+            <p>Tipo</p>
+            <div class="radio-box">
+                <input type="radio" name="tipo" id="casa" required>
+                <label for="casa">Casa</label>
+            </div>
+            <div class="radio-box">
+                <input type="radio" name="tipo" id="apartamento" required>
+                <label for="apartamento">Apartamento</label>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Ultimo Emprego</legend>
+        <div class="input-group">
+            <label for="resumo-curriculo">Resumo Currículo</label>
+            <textarea name="resumo-curriculo" id="resumo-curriculo" cols="30" rows="10" maxlength="1000"
+                      required></textarea>
+        </div>
+        <div class="input-group">
+            <label for="cargo">Cargo</label>
+            <input type="text" name="cargo" id="cargo">
+        </div>
+        <div class="input-group">
+            <label for="descricao-cargo">Descrição do Cargo</label>
+            <input type="text" name="descricao-cargo" id="descricao-cargo" max="500" required>
+        </div>
+        <div class="input-group">
+            <label for="data-inicio">Data de inicio</label>
+            <input type="text" name="data-inicio" id="data-inicio" max="40" required>
+            <small id="data-inicio-error" class="error-message"></small>
+        </div>
+    </fieldset>
+    <button id="button-save">Salvar</button>
+</form>
+<script src="scrips.js"></script>
+</body>
+</html>
