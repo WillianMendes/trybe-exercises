@@ -28,7 +28,7 @@ const estados = [
   {"nome": "Tocantins", "sigla": "TO"}
 ]
 
-const date = document.getElementById('data-inicio');
+let date = document.getElementById('data-inicio');
 const buttonSave = document.getElementById('button-save');
 
 function addEstadosBox() {
@@ -42,8 +42,34 @@ function addEstadosBox() {
   }
 }
 
-function checkDate(event) {
+// function checkDate(event) {
+//   const error = document.getElementById('data-inicio-error');
+//   if (date.value === undefined) {
+//     error.innerText = 'Data invalida';
+//     return false;
+//   } else {
+//     const dateArray = date.value.split('/');
+//     if (dateArray[0] < 0 || dateArray[0] > 31 || dateArray[0].length !== 2) {
+//       error.innerText = 'Dia invalido!';
+//       return false;
+//     }
+//     if (dateArray[1] < 0 || dateArray[1] > 12 || dateArray[1].length !== 2) {
+//       error.innerText = 'Mês invalido!';
+//       return false;
+//     }
+//     if (dateArray[2] < 0 || dateArray[2] > 2021 || dateArray[2].length !== 4) {
+//       error.innerText = 'Ano invalido!';
+//       return false;
+//     }
+//     error.innerText = '';
+//   }
+//   event.preventDefault();
+//   return true;
+// }
+
+function checkDateLib() {
   const error = document.getElementById('data-inicio-error');
+  date.DatePickerX.getValue.format = 'dd/mm/yyyy';
   if (date.value === undefined) {
     error.innerText = 'Data invalida';
     return false;
@@ -63,11 +89,17 @@ function checkDate(event) {
     }
     error.innerText = '';
   }
+}
+
+function validation(event) {
   event.preventDefault();
-  return true;
+  checkDateLib();
 }
 
 window.onload = function() {
   addEstadosBox();
-  buttonSave.addEventListener('click', checkDate);
+  document.getElementById('data-inicio').DatePickerX.init({
+    format: 'dd/mm/yyyy'
+  });
+  buttonSave.addEventListener('click', validation);
 }
