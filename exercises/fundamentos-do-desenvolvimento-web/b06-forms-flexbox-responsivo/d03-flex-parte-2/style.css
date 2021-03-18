@@ -14,15 +14,31 @@ body {
     display: flex;
 }
 
+.header-container:nth-child(1) {
+    order: 1;
+}
+
+.header-container:nth-child(2) {
+    order: 2;
+}
+
 .logo-container {
     display: flex;
     justify-content: center;
     flex-basis: 268px;
 }
 
+.logo-container {
+    order: 1;
+}
+
 .menu-container {
     display: flex;
     flex-basis: 500px;
+}
+
+.menu-container {
+    order: 2;
 }
 
 .menu-container ul {
