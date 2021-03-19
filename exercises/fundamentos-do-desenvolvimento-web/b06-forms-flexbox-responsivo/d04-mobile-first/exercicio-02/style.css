@@ -18,6 +18,13 @@ header {
     padding: 8px 16px;
     background-color: #18B892;
     display: flex;
+    justify-content: center;
+}
+
+header .container {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -43,7 +50,9 @@ header nav ul li a {
 }
 
 .container {
-    margin: 8px 16px;
+    max-width: 1024px;
+    margin: 8px auto;
+    padding: 0 8px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
