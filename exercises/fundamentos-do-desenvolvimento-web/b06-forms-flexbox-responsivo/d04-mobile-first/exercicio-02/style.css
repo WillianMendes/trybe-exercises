@@ -122,3 +122,34 @@ footer .container {
         font-size: 20px;
     }
 }
+
+@media screen and (max-width: 425px) {
+    header .container {
+        justify-content: center;
+    }
+
+    header .container nav {
+        display: none;
+    }
+
+    header .container p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .main-content {
+        flex-basis: 100%;
+    }
+
+    .main-content h1 {
+        font-size: 24px;
+    }
+
+    .main-content p {
+        font-size: 18px;
+    }
+
+    .aside {
+        display: none;
+    }
+}
