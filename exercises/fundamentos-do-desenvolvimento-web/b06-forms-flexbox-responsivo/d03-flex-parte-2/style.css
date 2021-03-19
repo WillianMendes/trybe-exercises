@@ -34,10 +34,8 @@ body {
 
 .menu-container {
     display: flex;
+    align-self: center;
     flex-basis: 500px;
-}
-
-.menu-container {
     order: 2;
 }
 
