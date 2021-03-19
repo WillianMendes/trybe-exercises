@@ -1,0 +1,67 @@
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        max-width: 920px;
+        font-size: 14px;
+        margin: 8px 64px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    figure {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        margin: 8px 32px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-container figure {
+        flex-basis: calc(50% - 8px);
+        margin-bottom: 16px;
+    }
+
+    .flex-container figure:nth-child(even) {
+        margin-left: 16px;
+    }
+
+    .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 425px){
+    body {
+        font-size: 20px;
+        margin: 8px 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    figure {
+        margin-bottom: 16px;
+    }
+}
