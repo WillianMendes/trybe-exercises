@@ -8,7 +8,7 @@ figure {
 
 @media screen and (max-width: 425px){
     body {
-        font-size: 18px;
+        font-size: 20px;
         margin: 8px 16px;
     }
 
@@ -18,5 +18,34 @@ figure {
 
     figure {
         margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        margin: 8px 32px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-container figure {
+        flex-basis: calc(50% - 8px);
+        margin-bottom: 16px;
+    }
+
+    .flex-container figure:nth-child(even) {
+        margin-left: 16px;
+    }
+
+    .row {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
