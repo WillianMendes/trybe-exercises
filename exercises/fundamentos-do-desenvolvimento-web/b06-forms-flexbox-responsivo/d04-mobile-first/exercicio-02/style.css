@@ -4,3 +4,40 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.75;
+}
+
+header {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #18B892;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 16px;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: 800;
+}
