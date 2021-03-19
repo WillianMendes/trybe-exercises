@@ -1,0 +1,155 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.75;
+}
+
+header {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #18B892;
+    display: flex;
+    justify-content: center;
+}
+
+header .container {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 16px;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: 800;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 8px auto;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 8px;
+}
+
+.aside ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.aside ul li {
+    padding: 4px 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    padding: 0 8px;
+}
+
+.main-content p:nth-child(2) {
+    margin-top: 0;
+}
+
+footer {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #18B892;
+    display: flex;
+    justify-content: center;
+}
+
+footer .container {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header p, header a {
+        font-size: 18px;
+    }
+
+    .main-content h1 {
+        font-size: 28px;
+    }
+
+    .main-content p {
+        font-size: 16px;
+    }
+
+    .aside h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header .container {
+        justify-content: center;
+    }
+
+    header .container nav {
+        display: none;
+    }
+
+    header .container p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .main-content {
+        flex-basis: 100%;
+    }
+
+    .main-content h1 {
+        font-size: 24px;
+    }
+
+    .main-content p {
+        font-size: 18px;
+    }
+
+    .aside {
+        display: none;
+    }
+}
