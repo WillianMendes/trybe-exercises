@@ -104,3 +104,21 @@ footer .container {
     justify-content: space-between;
     align-items: center;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header p, header a {
+        font-size: 18px;
+    }
+
+    .main-content h1 {
+        font-size: 28px;
+    }
+
+    .main-content p {
+        font-size: 16px;
+    }
+
+    .aside h2 {
+        font-size: 20px;
+    }
+}
