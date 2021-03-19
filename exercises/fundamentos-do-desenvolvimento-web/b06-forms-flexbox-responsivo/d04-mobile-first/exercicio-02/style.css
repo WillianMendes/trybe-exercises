@@ -66,11 +66,26 @@ header nav ul li a {
     padding: 0 8px;
 }
 
+.aside ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.aside ul li {
+    padding: 4px 0;
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
     flex-basis: 70%;
     padding: 0 8px;
+}
+
+.main-content p:nth-child(2) {
+    margin-top: 0;
 }
 
 footer {
