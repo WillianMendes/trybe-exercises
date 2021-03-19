@@ -72,3 +72,20 @@ header nav ul li a {
     flex-basis: 70%;
     padding: 0 8px;
 }
+
+footer {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #18B892;
+    display: flex;
+    justify-content: center;
+}
+
+footer .container {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
