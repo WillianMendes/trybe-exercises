@@ -1,0 +1,22 @@
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (max-width: 425px){
+    body {
+        font-size: 18px;
+        margin: 8px 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    figure {
+        margin-bottom: 16px;
+    }
+}
