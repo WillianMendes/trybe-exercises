@@ -13,6 +13,22 @@ console.log('......................................');
  */
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
-// Seu código aqui.
+const arrayOrder = numbers => {
+    let phraseNumbers = 'Os números ';
+    for (let i = 0; i < numbers.length; i += 1) {
+        for (let j = 0; j < numbers.length - i - 1; j += 1) {
+            if (numbers[j + 1] < numbers[j]) {
+                [numbers[j + 1], numbers[j]] = [numbers[j], numbers[j + 1]];
+            }
+        }
+    }
+    for (let i = 0; i < numbers.length; i += 1) {
+        phraseNumbers += `${numbers[i]}, `
+        if (i === numbers.length) {
+            phraseNumbers += `se encontram ordenados de forma crescente!`;
+        }
+    }
+    return phraseNumbers;
+}
 
-console.log(oddsAndEvens);
+console.log(arrayOrder(oddsAndEvens));
