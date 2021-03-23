@@ -32,3 +32,12 @@ const arrayOrder = numbers => {
 }
 
 console.log(arrayOrder(oddsAndEvens));
+
+/**
+ * Bônus (opcional): tente fazer o mesmo exercício utilizando o método array.sort().
+ **/
+const arrayOrderBonus = numbers => {
+    numbers.sort((a, b) => a - b);
+    return numbers;
+}
+console.log(arrayOrderBonus(oddsAndEvens));
