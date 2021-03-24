@@ -40,3 +40,11 @@ function listKeys(lesson) {
     return Object.keys(lesson);
 }
 console.log(listKeys(lesson2));
+
+/*
+ * Crie uma função para mostrar o tamanho de um objeto.
+ */
+function showLengthLesson(lesson) {
+    return Object.keys(lesson).length;
+}
+console.log(showLengthLesson(lesson2));
