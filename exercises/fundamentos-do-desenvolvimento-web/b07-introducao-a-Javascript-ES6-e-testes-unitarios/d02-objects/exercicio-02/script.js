@@ -32,3 +32,11 @@ function addTurn(lesson, key, value) {
     lesson[key] = value;
 }
 addTurn(lesson2, 'turno', 'manhã');
+
+/*
+ * Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+ */
+function listKeys(lesson) {
+    return Object.keys(lesson);
+}
+console.log(listKeys(lesson2));
