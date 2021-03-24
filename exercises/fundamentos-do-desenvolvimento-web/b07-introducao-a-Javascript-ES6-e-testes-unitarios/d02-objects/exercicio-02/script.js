@@ -75,5 +75,12 @@ function countStudents(lesson) {
     }
     return quantityStudents;
 }
-
 console.log(countStudents(allLessons));
+
+/*
+ * Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.
+ */
+function getValueByNumber(lesson, keyNumber) {
+    return Object.values(lesson)[keyNumber];
+}
+console.log(getValueByNumber(lesson1, 0));
