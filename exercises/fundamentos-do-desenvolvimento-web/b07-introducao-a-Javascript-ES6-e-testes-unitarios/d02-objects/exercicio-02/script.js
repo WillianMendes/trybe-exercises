@@ -48,3 +48,11 @@ function showLengthLesson(lesson) {
     return Object.keys(lesson).length;
 }
 console.log(showLengthLesson(lesson2));
+
+/*
+ * Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
+ */
+function listValuesLesson(lesson) {
+    return Object.values(lesson);
+}
+console.log(listValuesLesson(lesson2));
