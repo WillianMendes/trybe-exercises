@@ -1,3 +1,9 @@
+console.log('......................................');
+console.log('......................................');
+console.log('..... Módulo 1 | Bloco 7 | Dia 2 .....');
+console.log('......................................');
+console.log('......................................');
+
 const order = {
     name: 'Rafael Andrade',
     phoneNumber: '11-98763-1416',
@@ -36,14 +42,23 @@ const order = {
 
 const customerInfo = (order) => {
     // Adicione abaixo as informações necessárias.
-
+    return `Olá ${order.order.delivery.deliveryPerson}, 
+    entrega para: ${order.name}, 
+    Telefone: ${order.phoneNumber},
+    R. ${order.address.street}, 
+    Nº: ${order.address.number}
+    AP: ${order.address.apartment}.`;
 }
 
-customerInfo(order);
+console.log(customerInfo(order));
 
 const orderModifier = (order) => {
     // Adicione abaixo as informações necessárias.
-
+    order.order.delivery.deliveryPerson = 'Luiz Silva';
+    order.order.delivery.price = 'R$50,00';
+    return `Olá ${order.order.delivery.deliveryPerson},
+    o total do seu pedido de ${Object.keys(order.order.pizza)} e ${order.order.drinks.coke.type}
+    é de ${order.order.delivery.price}`;
 }
 
-orderModifier(order);
+console.log(orderModifier(order));
