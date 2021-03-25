@@ -29,9 +29,9 @@
 
 - **JavaScript: DOM, Eventos e Web Storage** :heavy_check_mark:
 
-- **HTML e CSS; Forms, Flexbox e Responsivo** :hourglass:
+- **HTML e CSS; Forms, Flexbox e Responsivo** :heavy_check_mark:
 
-- **Introdução à JavaScript ES6 e Testes Unitários** :hourglass:
+- **Introdução à JavaScript ES6 e Testes Unitários** :heavy_check_mark:
 
 - **Higher Order Functions do JavaScript ES6** :hourglass:
 
