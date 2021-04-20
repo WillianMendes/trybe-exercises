@@ -38,7 +38,7 @@ const professionalBoard = [
 ];
 
 const searchEmployee = (id, detail) => {
-
+    return professionalBoard.find((professional) => professional.id === id);
 };
 
 module.exports = searchEmployee;
