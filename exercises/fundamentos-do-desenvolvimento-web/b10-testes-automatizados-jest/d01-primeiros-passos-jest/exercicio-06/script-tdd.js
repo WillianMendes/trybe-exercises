@@ -36,3 +36,9 @@ const professionalBoard = [
         specialities: ['Backend'],
     },
 ];
+
+const searchEmployee = (id, detail) => {
+
+};
+
+module.exports = searchEmployee;
