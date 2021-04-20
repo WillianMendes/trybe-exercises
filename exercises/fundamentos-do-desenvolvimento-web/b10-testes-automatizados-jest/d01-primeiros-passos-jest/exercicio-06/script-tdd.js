@@ -38,7 +38,8 @@ const professionalBoard = [
 ];
 
 const searchEmployee = (id, detail) => {
-    return professionalBoard.find((professional) => professional.id === id);
+    const professionalFind = professionalBoard.find((professional) => professional.id === id);
+    if (professionalFind === undefined) return "ID não identificada";
 };
 
 module.exports = searchEmployee;
