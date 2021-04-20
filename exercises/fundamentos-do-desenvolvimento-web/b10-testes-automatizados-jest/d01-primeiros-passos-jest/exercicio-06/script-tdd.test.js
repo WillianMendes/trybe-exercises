@@ -10,4 +10,15 @@ describe('Testa a função searchEmployee', function () {
     it('Se a informação que se quer acessar não existir, a função deve retornar o erro "Informação indisponível"', function () {
         expect(searchEmployee('8579-6', ['firstName, lastName, motherName'])).toBe('Informação indisponível');
     });
+    it('Verifica se retorna apenas as informações consultadas pelo argumento detail', function () {
+        expect(searchEmployee('8579-6', ['firstName', 'lastName'])).toEqual(
+            {'firstName': 'Ana', 'lastName': 'Gates'}
+        );
+        expect(searchEmployee('8579-6', ['id', 'specialities'])).toEqual(
+            {id: '8579-6', specialities: ['UX', 'Design']}
+        );
+        expect(searchEmployee('8579-6', ['firstName'])).toEqual(
+            {'firstName': 'Ana'}
+        );
+    });
 });
