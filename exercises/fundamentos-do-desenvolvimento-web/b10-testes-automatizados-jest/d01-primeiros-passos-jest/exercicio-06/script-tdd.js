@@ -40,6 +40,14 @@ const professionalBoard = [
 const searchEmployee = (id, detail) => {
     const professionalFind = professionalBoard.find((professional) => professional.id === id);
     if (professionalFind === undefined) return "ID não identificada";
+
+    const professional = {};
+    for (const detailElement of detail) {
+        professional[detailElement] = professionalFind[detailElement];
+        if (professional[detailElement] === undefined) return 'Informação indisponível';
+    }
+
+    return professional;
 };
 
 module.exports = searchEmployee;
