@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 
+const task = (tasks) => {
+    return (
+        tasks.map((task) => <li>{task}</li>)
+    );
+}
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const tasks = ['Passear com o doguinho.', 'Lavar o carro.', 'Ler mais 1 capitulo do livro Clean Code.']
+    return (
+        <div>
+            <ol>
+                {task(tasks)}
+            </ol>
+        </div>
+    );
 }
 
 export default App;
