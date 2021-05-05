@@ -7,15 +7,24 @@ class Form extends Component {
         this.state = {
           name: undefined,
           email: undefined,
-          cpf: undefined
+          cpf: undefined,
+          address: undefined
         };
 
+        this.validateAddress = this.validateAddress.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    validateAddress(address) {
+        const addressWithoutSpecialsChar = address.replace(/[^a-zA-Z0-9 ]/g, "");
+        this.setState({ address: addressWithoutSpecialsChar });
+    }
+
     handleChange(event) {
         const { name, value } = event.target;
+
+        if (name === 'address') this.validateAddress(value);
 
         this.setState({[name]: value});
     }
@@ -26,7 +35,7 @@ class Form extends Component {
     }
 
     render() {
-        const { name, email, cpf } = this.props;
+        const { name, email, cpf, address } = this.props;
 
         return (
             <form action="#" onSubmit={ this.handleSubmit }>
@@ -39,6 +48,9 @@ class Form extends Component {
                     </label>
                     <label htmlFor="cpfInput"> CPF:
                         <input type="text" name="cpf" id="cpfInput" value={ cpf } onChange={ this.handleChange } maxLength="11" required />
+                    </label>
+                    <label htmlFor="addressInput"> Endereço:
+                        <input type="text" name="address" id="addressInput" value={ address } onChange={ this.handleChange } maxLength="200" required />
                     </label>
                 </fieldset>
             </form>
