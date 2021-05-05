@@ -5,13 +5,15 @@ class Form extends Component {
         super(props);
 
         this.state = {
-          name: undefined,
-          email: undefined,
-          cpf: undefined,
-          address: undefined
+          name: '',
+          email: '',
+          cpf: '',
+          address: '',
+          city: ''
         };
 
         this.validateAddress = this.validateAddress.bind(this);
+        this.handleValidateCity = this.handleValidateCity.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -29,13 +31,18 @@ class Form extends Component {
         this.setState({[name]: value});
     }
 
+    handleValidateCity(event) {
+        const { value } = event.target;
+        if (!isNaN(value.charAt(0))) this.setState({ city: '' });
+    }
+
     handleSubmit(event) {
         alert('Um nome foi enviado: ' + this.state.value);
         event.preventDefault();
     }
 
     render() {
-        const { name, email, cpf, address } = this.props;
+        const { name, email, cpf, address, city } = this.state;
 
         return (
             <form action="#" onSubmit={ this.handleSubmit }>
@@ -51,6 +58,9 @@ class Form extends Component {
                     </label>
                     <label htmlFor="addressInput"> Endereço:
                         <input type="text" name="address" id="addressInput" value={ address } onChange={ this.handleChange } maxLength="200" required />
+                    </label>
+                    <label htmlFor="cityInput"> Cidade:
+                        <input type="text" name="city" id="cityInput" value={ city } onChange={ this.handleChange } onBlur={ this.handleValidateCity } maxLength="28" required />
                     </label>
                 </fieldset>
             </form>
