@@ -9,7 +9,8 @@ class Form extends Component {
           email: '',
           cpf: '',
           address: '',
-          city: ''
+          city: '',
+          state: ''
         };
 
         this.validateAddress = this.validateAddress.bind(this);
@@ -42,7 +43,7 @@ class Form extends Component {
     }
 
     render() {
-        const { name, email, cpf, address, city } = this.state;
+        const { name, email, cpf, address, city, state } = this.state;
 
         return (
             <form action="#" onSubmit={ this.handleSubmit }>
@@ -61,6 +62,14 @@ class Form extends Component {
                     </label>
                     <label htmlFor="cityInput"> Cidade:
                         <input type="text" name="city" id="cityInput" value={ city } onChange={ this.handleChange } onBlur={ this.handleValidateCity } maxLength="28" required />
+                    </label>
+                    <label htmlFor="cityInput"> Estados:
+                        <select name="state" id="statesSelect" value={ state } onChange={ this.handleChange } required>
+                            <option value="es">Espirito Santo</option>
+                            <option value="mg">Minas Gerais</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="sp">São Paulo</option>
+                        </select>
                     </label>
                 </fieldset>
             </form>
