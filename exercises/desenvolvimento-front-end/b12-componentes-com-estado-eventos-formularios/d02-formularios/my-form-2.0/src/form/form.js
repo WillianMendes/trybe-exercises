@@ -6,7 +6,8 @@ class Form extends Component {
 
         this.state = {
           name: undefined,
-          email: undefined
+          email: undefined,
+          cpf: undefined
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -25,7 +26,7 @@ class Form extends Component {
     }
 
     render() {
-        const { name, email } = this.props;
+        const { name, email, cpf } = this.props;
 
         return (
             <form action="#" onSubmit={ this.handleSubmit }>
@@ -35,6 +36,9 @@ class Form extends Component {
                     </label>
                     <label htmlFor="emailInput"> Email:
                         <input type="email" name="email" id="emailInput" value={ email } onChange={ this.handleChange } maxLength="50" required />
+                    </label>
+                    <label htmlFor="cpfInput"> CPF:
+                        <input type="text" name="cpf" id="cpfInput" value={ cpf } onChange={ this.handleChange } maxLength="11" required />
                     </label>
                 </fieldset>
             </form>
