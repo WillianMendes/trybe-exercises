@@ -17,6 +17,7 @@ class Form extends Component {
       jobDescription: '',
       modalIsOpen: false,
       warning: true,
+      type: '',
     };
 
     this.modalOpen = this.modalOpen.bind(this);
@@ -25,6 +26,7 @@ class Form extends Component {
     this.handleValidateAddress = this.handleValidateAddress.bind(this);
     this.handleValidateCity = this.handleValidateCity.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.handleReset = this.handleReset.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -54,6 +56,25 @@ class Form extends Component {
   handleSubmit(event) {
     event.preventDefault();
     this.modalOpen();
+  }
+
+  handleReset(event) {
+    event.preventDefault();
+    this.modalClosed();
+    this.setState({
+      name: '',
+      email: '',
+      cpf: '',
+      address: '',
+      city: '',
+      state: '',
+      curriculumSummary: '',
+      role: '',
+      type: '',
+      jobDescription: '',
+      modalIsOpen: false,
+      warning: false,
+    });
   }
 
   modalOpen() {
@@ -235,6 +256,7 @@ class Form extends Component {
             </div>
           </fieldset>
           <button className="btn btn-primary" type="submit">Salvar</button>
+          <button className="btn btn-outline-danger" type="button" onClick={this.handleReset}>Limpar</button>
         </form>
       </div>
     );
