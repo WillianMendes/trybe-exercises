@@ -11,6 +11,7 @@ class Form extends Component {
       address: '',
       city: '',
       state: '',
+      curriculumSummary: '',
     };
 
     this.handleValidateAddress = this.handleValidateAddress.bind(this);
@@ -43,12 +44,13 @@ class Form extends Component {
 
   render() {
     const {
-      name, email, cpf, address, city, state, type,
+      name, email, cpf, address, city, state, type, curriculumSummary,
     } = this.state;
 
     return (
       <form action="#" onSubmit={this.handleSubmit}>
         <fieldset>
+          <legend className="form-label">Dados Pessoais</legend>
           <div className="mb-3">
             <input
               type="text"
@@ -163,6 +165,22 @@ class Form extends Component {
                 />
               </label>
             </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend className="form-label">Ultimo Emprego</legend>
+          <div className="mb-3">
+            <textarea
+              name="curriculumSummary"
+              className="form-control"
+              value={curriculumSummary}
+              onChange={this.handleChange}
+              maxLength="1000"
+              rows="4"
+              placeholder="Resumo do Currículo"
+              aria-label="Resumo do Currículo"
+              required
+            />
           </div>
         </fieldset>
       </form>
