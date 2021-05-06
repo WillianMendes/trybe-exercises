@@ -1,5 +1,6 @@
-import Form from "./form/form";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import React from 'react';
+import Form from './form/form';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
