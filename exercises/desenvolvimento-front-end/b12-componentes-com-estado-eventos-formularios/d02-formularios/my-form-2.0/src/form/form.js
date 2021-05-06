@@ -10,7 +10,8 @@ class Form extends Component {
           cpf: '',
           address: '',
           city: '',
-          state: ''
+          state: '',
+          curriculumSummary: '',
         };
 
         this.validateAddress = this.validateAddress.bind(this);
@@ -43,43 +44,69 @@ class Form extends Component {
     }
 
     render() {
-        const { name, email, cpf, address, city, state, type } = this.state;
+        const { name, email, cpf, address, city, state, type, curriculumSummary } = this.state;
 
         return (
             <form action="#" onSubmit={ this.handleSubmit }>
                 <fieldset>
-                    <label htmlFor="nameInput"> Nome:
-                        <input type="text" name="name" id="nameInput" value={ name } onChange={ this.handleChange } maxLength="40" required />
-                    </label>
-                    <label htmlFor="emailInput"> Email:
-                        <input type="email" name="email" id="emailInput" value={ email } onChange={ this.handleChange } maxLength="50" required />
-                    </label>
-                    <label htmlFor="cpfInput"> CPF:
-                        <input type="text" name="cpf" id="cpfInput" value={ cpf } onChange={ this.handleChange } maxLength="11" required />
-                    </label>
-                    <label htmlFor="addressInput"> Endereço:
-                        <input type="text" name="address" id="addressInput" value={ address } onChange={ this.handleChange } maxLength="200" required />
-                    </label>
-                    <label htmlFor="cityInput"> Cidade:
-                        <input type="text" name="city" id="cityInput" value={ city } onChange={ this.handleChange } onBlur={ this.handleValidateCity } maxLength="28" required />
-                    </label>
-                    <label htmlFor="stateSelect"> Estados:
-                        <select name="state" id="stateSelect" value={ state } onChange={ this.handleChange } required>
-                            <option value="es">Espirito Santo</option>
-                            <option value="mg">Minas Gerais</option>
-                            <option value="rj">Rio de Janeiro</option>
-                            <option value="sp">São Paulo</option>
-                        </select>
-                    </label>
-                    <div>
-                        Tipo:
-                        <label>
-                            <input type="radio" name="type" id="homeInput" value="home" checked={ type === "home" } onChange={ this.handleChange }/> Casa
-                        </label>
-                        <label>
-                            <input type="radio" name="type" id="apartmentInput" value="apartment" checked={ type === "apartment" } onChange={ this.handleChange }/> Apartamento
+                    <div className="mb-3">
+                        <input
+                            type="text"
+                            name="name"
+                            className="form-control"
+                            value={ name }
+                            onChange={ this.handleChange }
+                            maxLength="40"
+                            placeholder="Nome"
+                            aria-label="nome"
+                            required />
+                    </div>
+                    <div className="mb-3">
+                        <label htmlFor="emailInput" className="form-label"> Email:
+                            <input type="email" name="email" id="emailInput" className="form-control" value={ email } onChange={ this.handleChange } maxLength="50" required />
                         </label>
                     </div>
+                    <div className="mb-3">
+                        <label htmlFor="cpfInput" className="form-label"> CPF:
+                            <input type="text" name="cpf" id="cpfInput" className="form-control" value={ cpf } onChange={ this.handleChange } maxLength="11" required />
+                        </label>
+                    </div>
+                    <div className="mb-3">
+                        <label htmlFor="addressInput" className="form-label"> Endereço:
+                            <input type="text" name="address" id="addressInput" className="form-control" value={ address } onChange={ this.handleChange } maxLength="200" required />
+                        </label>
+                    </div>
+                    <div className="mb-3">
+                        <label htmlFor="cityInput" className="form-label"> Cidade:
+                            <input type="text" name="city" id="cityInput" className="form-control" value={ city } onChange={ this.handleChange } onBlur={ this.handleValidateCity } maxLength="28" required />
+                        </label>
+                    </div>
+                    <div className="mb-3">
+                        <label htmlFor="stateSelect" className="form-label"> Estados:
+                            <select name="state" id="stateSelect" className="form-select" value={ state } onChange={ this.handleChange } required>
+                                <option value="es">Espirito Santo</option>
+                                <option value="mg">Minas Gerais</option>
+                                <option value="rj">Rio de Janeiro</option>
+                                <option value="sp">São Paulo</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        Tipo:
+                        <div className="form-check">
+                            <label className="form-check-label">
+                                <input type="radio" name="type" id="homeInput" className="form-check-input" value="home" checked={ type === "home" } onChange={ this.handleChange }/> Casa
+                            </label>
+                        </div>
+                        <div className="form-check">
+                            <label className="form-check-label">
+                                <input type="radio" name="type" id="apartmentInput" className="form-check-input" value="apartment" checked={ type === "apartment" } onChange={ this.handleChange }/> Apartamento
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <textarea name="curriculumSummary" id="curriculumSummaryInput" value={curriculumSummary} maxLength="1000" required/>
                 </fieldset>
             </form>
         );
