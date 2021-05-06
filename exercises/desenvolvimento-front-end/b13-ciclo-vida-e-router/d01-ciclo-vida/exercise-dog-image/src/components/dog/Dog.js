@@ -46,6 +46,8 @@ class Dog extends Component {
     getNameDog(url) {
         const doguinho = url.split('/')[4].replace('-', ' ').toUpperCase();
         alert(doguinho);
+        const nameDoguinho = prompt('Dê um nome ao doguinho');
+        alert('O nome do doguinho é ' + nameDoguinho);
     }
 
     render() {
