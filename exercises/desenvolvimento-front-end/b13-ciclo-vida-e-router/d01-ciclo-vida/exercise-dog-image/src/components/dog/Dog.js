@@ -18,6 +18,10 @@ class Dog extends Component {
         this.newDog().then();
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        localStorage.setItem('prevDog', prevState.message);
+    }
+
     shouldComponentUpdate(nextProps, nextState, nextContext) {
         return !nextState.message.includes('terrier');
     }
