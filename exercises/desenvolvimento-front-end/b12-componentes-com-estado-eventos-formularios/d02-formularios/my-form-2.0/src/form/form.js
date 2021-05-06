@@ -12,6 +12,8 @@ class Form extends Component {
       city: '',
       state: '',
       curriculumSummary: '',
+      role: '',
+      jobDescription: '',
     };
 
     this.handleValidateAddress = this.handleValidateAddress.bind(this);
@@ -37,6 +39,10 @@ class Form extends Component {
     this.setState({ address: addressWithoutSpecialsChar });
   }
 
+  static handleValidateRole() {
+    alert('Preencha com cuidado esta informação.');
+  }
+
   handleSubmit(event) {
     event.preventDefault();
     console.log(this.state);
@@ -44,7 +50,7 @@ class Form extends Component {
 
   render() {
     const {
-      name, email, cpf, address, city, state, type, curriculumSummary,
+      name, email, cpf, address, city, state, type, curriculumSummary, role, jobDescription,
     } = this.state;
 
     return (
@@ -179,6 +185,33 @@ class Form extends Component {
               rows="4"
               placeholder="Resumo do Currículo"
               aria-label="Resumo do Currículo"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <textarea
+              name="role"
+              className="form-control"
+              value={role}
+              onChange={this.handleChange}
+              onMouseEnter={Form.handleValidateRole}
+              maxLength="40"
+              rows="2"
+              placeholder="Cargo"
+              aria-label="cargo"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <textarea
+              name="jobDescription"
+              className="form-control"
+              value={jobDescription}
+              onChange={this.handleChange}
+              maxLength="500"
+              rows="3"
+              placeholder="Descrição do Cargo"
+              aria-label="descrição do cargo"
               required
             />
           </div>
