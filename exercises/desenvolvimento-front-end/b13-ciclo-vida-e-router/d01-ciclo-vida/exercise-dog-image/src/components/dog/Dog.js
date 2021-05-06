@@ -14,7 +14,7 @@ class Dog extends Component {
         this.newDog = this.newDog.bind(this);
     }
 
-    componentDidMount() {
+    async componentDidMount() {
         this.newDog().then();
     }
 
@@ -38,7 +38,14 @@ class Dog extends Component {
                     status: dog.status,
                     loading: false,
                 });
+
+                this.getNameDog(this.state.message);
         });
+    }
+
+    getNameDog(url) {
+        const doguinho = url.split('/')[4].replace('-', ' ').toUpperCase();
+        alert(doguinho);
     }
 
     render() {
