@@ -1,0 +1,23 @@
+.dog-box {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.box-container span {
+    justify-self: center;
+    align-self: center;
+}
+
+.box-container .box-img {
+    width: 250px;
+    height: 250px;
+    border: 4px solid green;
+    border-radius: 16px;
+}
+
+.box-container .box-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 16px;
+}
